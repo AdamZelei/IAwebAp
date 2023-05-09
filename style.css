@@ -79,11 +79,12 @@ body {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
-.card {
+.card accContent {
     width: 80dvw;
 }
 
-#tape {
+#tape,
+#carrierTitle {
     margin: 2dvh 4.5dvw 0 4.5dvw;
 }
 
@@ -231,6 +232,10 @@ form {
     display: inline;
 }
 
+#improveBlock {
+    color: #e4e4e4;
+}
+
 .input-radio,
 .input-checkbox {
     display: inline-block;
@@ -273,10 +278,9 @@ td {
     border: 1px solid black;
 }
 
-table {
-    background-color: gray;
+.table {
     width: 100%;
-    color: white;
+    color: #e4e4e4;
 }
 
 .ugras_a_tartalomhoz {
@@ -291,4 +295,14 @@ table {
 
 .ugras_a_tartalomhoz:focus {
     transform: translateY(0%);
+}
+
+#carrierTitleImage {
+    max-width: 40dvw;
+    max-height: 50dvh;
+}
+
+.card {
+    min-height: 20dvh;
+    margin: 3rem 2rem 2rem 1rem;
 }
