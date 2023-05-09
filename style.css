@@ -228,7 +228,7 @@ form {
 }
 
 .form-text {
-    display:inline;
+    display: inline;
 }
 
 .input-radio,
@@ -267,16 +267,28 @@ main {
     background-color: #f8f9fa;
 }
 
-table, th, td{
+table,
+th,
+td {
     border: 1px solid black;
 }
 
-table{
+table {
     background-color: gray;
     width: 100%;
     color: white;
 }
 
-video {
-    float: right;
+.ugras_a_tartalomhoz {
+    background: white;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-205%);
+    transition: transform 0.3s;
+}
+
+.ugras_a_tartalomhoz:focus {
+    transform: translateY(0%);
 }
