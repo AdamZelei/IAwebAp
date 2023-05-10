@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 html {
@@ -139,6 +139,8 @@ button {
 #form-container {
     width: 100%;
     margin: 3.125rem auto 0 auto;
+    background-color: black;
+    background-blend-mode: lighten;
 }
 
 @media (min-width: 576px) {
