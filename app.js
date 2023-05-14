@@ -46,3 +46,7 @@ form.addEventListener('submit', event => {
       console.error('Error sending email:', error);
     });
 });
+
+function resetFunction() {
+  document.getElementById("#reset").reset();
+}

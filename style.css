@@ -21,6 +21,13 @@ body {
     background-color: #d3d3d3;
 }
 
+figcaption,
+.kiegeszitoInfo {
+    font-size: 0.8em;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
 #tape,
 .accordion-item,
 #footer {
@@ -39,7 +46,7 @@ body {
 .navbar-brand,
 .nav-link {
     color: #ffffff;
-    font-size: 2dvh;
+    font-size: 1em;
 }
 
 @media (max-width: 767px) {
@@ -91,6 +98,18 @@ body {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
+.join,
+.carrierThumb {
+    border: 1px solid rgba(0, 0, 0, .125);
+    max-width: 80%;
+}
+
+.join:hover,
+.carrierThumb:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .125);
+}
+
+
 .card accContent {
     width: 80dvw;
 }
@@ -106,8 +125,8 @@ body {
     align-items: center;
 }
 
-.join {
-    height: 30dvh
+.aboutPic {
+    width: 100%;
 }
 
 #title {
@@ -151,8 +170,9 @@ button {
 #form-container {
     width: 100%;
     margin: 3.125rem auto 0 auto;
-    background-color: black;
+    background-color: #0d1b2a;
     background-blend-mode: lighten;
+    border-radius: 0.25rem;
 }
 
 @media (min-width: 576px) {
@@ -163,7 +183,7 @@ button {
 
 @media (min-width: 768px) {
     #form-container {
-        max-width: 720px;
+        width: 720px;
     }
 }
 
@@ -203,6 +223,14 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+main a {
+    color: #a4161a;
+}
+
+main a:visited {
+    color: lightcoral;
 }
 
 /* form */
@@ -265,14 +293,30 @@ form {
     resize: vertical;
 }
 
+.termsLink {
+    color: #e4e4e4;
+}
+
+.termsLink:visited {
+    color: #ced4da;
+}
+
+.reset-button,
 .submit-button {
     display: block;
     width: 100%;
     padding: 0.75rem;
-    background: #212529;
     color: #e4e4e4;
     border-radius: 2px;
     cursor: pointer;
+}
+
+.submit-button {
+    background: #212529;
+}
+
+.reset-button {
+    background: #a4161a;
 }
 
 #comment {
@@ -286,7 +330,7 @@ main {
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid #212529;
 }
 
 .table {
@@ -302,7 +346,7 @@ td {
 }
 
 .ugras_a_tartalomhoz {
-    background: white;
+    background: #e4e4e4;
     height: 30px;
     left: 50%;
     padding: 8px;
@@ -331,12 +375,14 @@ td {
 .gsc-search-box {
     padding: 0 !important;
     margin: 0 5dvw 0 0 !important;
+    background-color: #a4161a !important;
+    border-color: #a4161a !important;
 }
 
 .gsc-control-wrapper-cse,
 .gsc-input-box {
     min-width: 15dvw !important;
-    margin-left: 35px;
+    margin-left: 2dvw !important;
 }
 
 .gsc-search-box,

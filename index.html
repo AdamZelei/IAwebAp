@@ -8,17 +8,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="print.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <title>Birodalmi Akadémia - Jelentkezési űrlap</title>
+  <title>Birodalmi Akadémia - Kezdőlap</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="img/death-star.png" alt="Halálcsillag logó." width="35" height="35" class="d-inline-block align-text-center" />
@@ -43,7 +44,6 @@
                 target="”_blank”">HoloNet</a>
             </li>
           </ul>
-
           <div class="gcse-search"></div>
           <button onclick="location.href='form.html'" class="btn btn-dark joinBtn" type="button">Csatlakozás</button>
         </div>
@@ -65,11 +65,11 @@
                 aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="7000">
+              <div class="carousel-item active">
                 <img src="img/336382133_6006897719365606_1689744260876239166_n.jpg" class="d-block w-100 carouselImg"
                   alt="TIE vadász gyártó üzem promóció. A Lothali vadászgép gyártó üzemet hivatott népszerűsíteni." />
               </div>
-              <div class="carousel-item" data-bs-interval="5000">
+              <div class="carousel-item">
                 <img src="img/Enlist_Today.jpg" class="d-block w-100 carouselImg" alt="Toborzási plakát rajta Darth Vaderrel, 'Egyedül nem képes rá.' felirattal."/>
               </div>
               <div class="carousel-item">
@@ -91,7 +91,7 @@
       </div>
     </div>
     
-    <div class="container-sm py-2">
+    <div class="container py-2">
       <div class="row" id="tape">
         <div class="col">
           <div class="d-flex justify-content-center my-2">
@@ -113,6 +113,7 @@
       <div class="row">
         <div class="col">
           <div class="accordion" id="accordionPanelsStayOpenExample">
+            <section>
             <div class="accordion-item p-2">
               <h2 class="accordion-header">
                 <button class="accordion-button text-bg-dark p-3" type="button" data-bs-toggle="collapse"
@@ -128,9 +129,11 @@
                       <div class="container-fluid">
                         <div class="row">
                           <div class="col-md-5 col-sm-12 joinPictureCol">
-                            <img src="img/336377517_162991123277450_3462041039879870260_n.jpg"
+                            <a href="img/336377517_162991123277450_3462041039879870260_n.jpg">
+                              <img src="img/elokep_1.jpg"
                               class="img-fluid rounded-start join" alt="Toborzási plakát az alábbi felirattal. 'Semmi sem múlja felül az akadémiai képzést. Tartozz a legjobbakhoz. Jelentkezz most!'">
-                          </div>
+                            </a>
+                            </div>
                           <div class="col-md-7 col-sm-12 gy-5">
                             <h3 class="content">
                               <strong>Tartozz a legjobbakhoz!</strong>
@@ -144,7 +147,7 @@
                               megvédelmezhette volna a Galaxist!
                             </p>
                             <p class="content">
-                              A Birodalom fegyveres erőit önkéntes polgárok
+                              A <strong>Birodalom</strong> fegyveres erőit önkéntes polgárok
                               alkotják a klónkatonák helyett. A zászlók,
                               hagyományok, jelképek helyére a rohamosztagosok
                               uniformitása kerül.
@@ -157,15 +160,17 @@
                 </div>
               </div>
             </div>
+          </section>
+          <section>
             <div class="accordion-item p-2">
               <h2 class="accordion-header">
-                <button class="accordion-button text-bg-dark p-3" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                <button class="accordion-button collapsed text-bg-dark p-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseTwo">
                   Kinevezések
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                 <div class="accordion-body">
                   <div class="card accContent">
                     <div class="card-body">
@@ -176,7 +181,7 @@
                           </div>
                           <div class="col-md-7 col-sm-12 gy-5">
                             <h3 class="content">
-                              <strong>Gilad Pellaeon kapitány veszi át az Árnyék
+                              <strong><a href="https://starwars.fandom.com/wiki/Gilad_Pellaeon/Legends">Gilad Pellaeon</a> kapitány veszi át az Árnyék
                                 Tanács irányítását Gideon Moff bukását
                                 követően</strong>
                             </h3>
@@ -217,6 +222,7 @@
                 </div>
               </div>
             </div>
+          </section>
           </div>
         </div>
       </div>

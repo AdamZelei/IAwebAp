@@ -8,17 +8,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="print.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <title>Birodalmi Akadémia - Jelentkezési űrlap</title>
+  <title>Birodalmi Akadémia - Karrier</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="img/death-star.png" alt="Halálcsillag logó." width="35" height="35" class="d-inline-block align-text-center" />
@@ -65,9 +66,11 @@
     <div class="container-sm">
       <div class="row">
         <div class="col">
-          <img src="img/328031447_746920939864693_405497631080765678_n.jpg" class="rounded mx-auto d-block"
+          <a href="img/328031447_746920939864693_405497631080765678_n.jpg">
+          <img src="img/elokep_2.jpg" class="rounded mx-auto d-block carrierThumb"
             alt="Toborzó plakát rajta egy rohamosztagos portréjával. A felirat 'Csatlakozz a birodalmi hadsereghez!'" id="carrierTitleImage">
-        </div>
+          </a>
+          </div>
       </div>
     </div>
 
@@ -80,10 +83,10 @@
               <h6 class="card-subtitle mb-2 text-body-secondary">Külső gyűrű</h6>
             </div>
             <div class="card-body">
-              <p class="card-text">Üdvözölünk a Galaktikus Birodalom csapatában! Itt a helyed, ha vágyod a kihívást és
+              <p class="card-text">Üdvözölünk a <strong>Galaktikus Birodalom</strong> csapatában! Itt a helyed, ha vágyod a kihívást és
                 az izgalmat. A Birodalmi Akadémia rohamosztagosokat toboroz, akik galaxis szerte felkészültek a
                 Birodalom védelmére és a béke fenntartására.</p>
-              <a href="stormtrooper.html" class="btn btn-dark">Részletek</a>
+              <button onclick="location.href='stormtrooper.html'" type="button" class="btn btn-dark">Részletek</button>
             </div>
           </div>
         </div>
