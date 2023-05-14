@@ -114,6 +114,8 @@ figcaption,
     width: 80dvw;
 }
 
+
+
 #tape,
 #carrierTitle {
     margin: 2dvh 4.5dvw 0 4.5dvw;
@@ -348,11 +350,11 @@ td {
 .ugras_a_tartalomhoz {
     background: #e4e4e4;
     height: 30px;
-    left: 50%;
+    left: 40%;
     padding: 8px;
     position: absolute;
     transform: translateY(-205%);
-    transition: transform 0.3s;
+    transition: transform 0.3s; 
 }
 
 .ugras_a_tartalomhoz:focus {
